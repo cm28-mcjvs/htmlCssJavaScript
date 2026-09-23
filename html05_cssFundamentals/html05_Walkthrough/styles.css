@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(245, 245, 245);
+  line-height: 1.6; /* more space between lines of text */
+}
+
+h1 {
+  color: #1a73e8;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center; /* center the heading */
+}
+
+p {
+  color: #202124;
+  font-size: 16px;
+  margin-bottom: 15px; /* space below each paragraph */
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.highlight {
+  background-color: #fff3cd;
+  color: #856404;
+  font-weight: bold;
+  padding: 10px; /* space inside the box */
+  border-left: 4px solid #ffc107; /* yellow bar on the left */
+}
+
+#footer {
+  background-color: #202124;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px; /* space above the footer */
+}
+
+table,
+th,
+td {
+  border: 1px solid #202124;
+  border-collapse: collapse; /* merge double lines into single lines */
+  padding: 8px;
+}
+
+#prices td {
+  text-align: center;
+}
+
+th {
+  background-color: #1a73e8;
+  color: white;
+}
+
+img {
+  max-width: 100%;  /* never wider than the space it's in */
+  height: auto;     /* keep the right shape when it shrinks */
+}

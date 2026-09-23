@@ -1,0 +1,126 @@
+/* Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --site-color: rgb(243, 49, 49);
+    --border-style: 1px solid white;
+}
+
+body {
+    background-color: rgb(21, 21, 21);
+}
+
+/* Text Styling */
+p {
+    color: white;
+}
+
+/* Header Box Styling */
+header {
+    display: flex;
+    border: var(--border-style);
+    height: auto;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.navbutton {
+    border-left: 1px solid red;
+    height: 100%;
+    width: 25%;
+    padding: 10px;
+
+    text-align: center;
+    padding-top: 16px;
+    text-decoration: none;
+    color: white;
+
+    transition-duration: 0.2s;
+}
+
+.navbutton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navdropdown {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    display: none;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+}
+
+.navdropdown:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.navdropdown::details-content {
+    margin: 30px;
+    margin-top: 0px;
+}
+
+summary p {
+    font-size: 72px;
+    user-select: none;
+
+    margin: 0px auto 0px 4px;
+    line-height: 50px;
+}
+
+.navdropbutton {
+    border-left: 1px solid red;
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+
+    transition-duration: 0.2s;
+}
+
+.navdropbutton:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+#navdroplist {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+}
+
+
+/* Main Content Styling */
+main {
+    display: flexbox;
+    border: var(--border-style);
+}
+
+footer {
+    display: flexbox;
+    border: var(--border-style);
+}
+
+@media (max-width: 500px) {
+    .navbutton {
+        display: none;
+    }
+
+    .navdropdown, .navdropbutton {
+        display: inline;
+    }
+
+    .navdropbutton {
+        padding-top: 10px;
+    }
+}

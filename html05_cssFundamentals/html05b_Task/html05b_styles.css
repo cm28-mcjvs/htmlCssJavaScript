@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+  color: navy;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.highlight {
+  background-color: lightyellow;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#featured {
+  background-color: #444;
+  color: white;
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+p {
+    line-height: 1.6;
+}
