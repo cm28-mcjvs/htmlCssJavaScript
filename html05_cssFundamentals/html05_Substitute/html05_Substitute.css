@@ -1,0 +1,103 @@
+/* Step 2 - Whole Page */
+* {
+    font-family: "Arial";
+}
+
+/* Step 3 - Body */
+body {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+/* Step 4 - Header */
+h1 {
+    font-size: 2.5rem;
+    color: rgb(21, 21, 21);
+}
+
+/* Step 5 - Page Title */
+#page-title {
+    background-color: darkslategray;
+    color: azure;
+}
+
+/* Step 6 - Subheaders */
+h2, h3 {
+    color: palegreen;
+}
+
+/* Step 7 - Notes */
+.note {
+    padding: 10px;
+    background-color: rgba(0, 128, 255, 0.2);
+}
+
+/*  ================
+        Practice
+    =============== */
+
+/* Step 8 - Highlight */
+p.highlight {
+    background-color: rgba(255, 255, 100, 0.2);
+}
+
+/* Step 9 - Buttons */
+.btn {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid white;
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    filter: invert();
+}
+
+.btn-red {
+    background-color: #FF5050;
+}
+
+.btn-green {
+    background-color: rgb(100, 255, 100);
+}
+
+.btn-blue {
+    background-color: hsl(246, 100%, 70%);
+}
+
+/* Step 10 - Box Model */
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    /* Reducing the margins lowers the distance between this element and other ones */
+    border: 10px solid black;
+    background-color: whitesmoke;
+}
+
+/* Step 11 - Percent Width */
+.half {
+    width: 50%;
+    background-color: thistle;
+    color: black;
+}
+
+/* Step 12 - Specificity Test */
+#test {
+    color: green; /* This color wins because an ID is the highest specficity of an element. */
+}
+
+.test-class {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+/* Step 13 - Footer */
+footer p {
+    font-size: 12px;
+    color: gray;
+}
