@@ -1,6 +1,9 @@
-/* Page Styling */
+/*  ====================
+    Overall Page Styling
+    ====================  */
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 :root {
@@ -10,14 +13,54 @@
 
 body {
     background-color: rgb(21, 21, 21);
+    overflow-x: hidden;
+    margin: 0px;
 }
 
-/* Text Styling */
+/*  ============
+    Text Styling
+    ============  */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: clamp(0%, 10vw, 84px);
+}
+#edm {
+    background: linear-gradient(90deg, royalblue, orchid, royalblue);
+    background-size: 200% auto;
+    color: white; /* Fallback for older browsers */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 6s linear infinite;
+}
+#edm-glow {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: clamp(0%, 10vw, 84px);
+    inset: 55px auto auto 5px;
+    filter: blur(10px) saturate(200%);
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+@keyframes gradient {
+    0% {
+    	background-position: 0% center;
+  	}
+  	100% {
+    	background-position: 200% center;
+  	}
+}
+
 p {
     color: white;
 }
 
-/* Header Box Styling */
+/*  ==================
+    Header Box Styling
+    ==================  */
 header {
     display: flex;
     border: var(--border-style);
@@ -35,9 +78,10 @@ header {
     height: 100%;
     width: 25%;
     padding: 10px;
+    font-size: 20px;
 
     text-align: center;
-    padding-top: 16px;
+    padding-top: 10px;
     text-decoration: none;
     color: white;
 
@@ -67,8 +111,10 @@ header {
     margin-top: 0px;
 }
 
+/* This is the "hamburger" icon for the dropdown menu. */
 summary p {
     font-size: 72px;
+    font-family: none; /* Resets it to whatever the default is */
     user-select: none;
 
     margin: 0px auto 0px 4px;
@@ -80,6 +126,7 @@ summary p {
     height: 100%;
     width: 150px;
     padding: 10px;
+    z-index: 1; /* Puts buttons above the EDM text */
 
     text-align: center;
     text-decoration: none;
@@ -99,18 +146,45 @@ summary p {
     padding-right: 0px;
 }
 
+#headericon {
+    content: url(./media/icon.jpg);
+}
 
-/* Main Content Styling */
+/*  ====================
+    Main Content Styling
+    ====================  */
 main {
     display: flexbox;
     border: var(--border-style);
 }
+main p {
+    padding: 10px;
+    margin: 4px;
+}
 
+#title {
+    border: 1px solid grey; /* Temporary */
+    background-image: url(./media/a-foggy-dance-club.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    background-position: center 220%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  ==================
+    Footer Box Styling
+    ==================  */
 footer {
     display: flexbox;
     border: var(--border-style);
+    padding: 10px;
 }
 
+/*  ======================
+    Thinner Screen Styling
+    ======================  */
 @media (max-width: 500px) {
     .navbutton {
         display: none;
@@ -122,5 +196,9 @@ footer {
 
     .navdropbutton {
         padding-top: 10px;
+    }
+
+    #headericon {
+        content: url(./media/logo.jpg);
     }
 }
