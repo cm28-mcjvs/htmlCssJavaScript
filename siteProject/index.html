@@ -9,11 +9,13 @@
     <body>
         <!-- Site Header -->
         <header>
+            <!-- Site logo/icon. Redirects to the homepage -->
             <a href="index.html" style="height: 50px;">
                 <img id="headericon" src="./media/icon.jpg"
                     alt="Electro Guide Icon" height="50px">
             </a>
-            <!-- The navigation on top. Will be replaced with dropdown menu at thinner screen size -->
+
+            <!-- The navigation on top. Replaced with dropdown menu at thinner screen size -->
             <div class="navbar">
                 <a href="#" class="navbutton">Home</a>
                 <a href="#" class="navbutton">About</a>
@@ -44,18 +46,63 @@
                         of </span><span id="edm">EDM</span></h1>
             </div>
 
-            <!-- The first bit of homepage content. Explanations and such -->
-            <div class="intro">
+            <!-- The first of the site content. Likely a quote or short tagline -->
+            <div id="intro">
                 <p><strong>Electronic Dance Music</strong> (EDM) is a broad
                     range of percussive electronic music genres originally made
-                    for nightclubs, raves, and festivals. - Wikipedia</p>
+                    for nightclubs, raves, and festivals. Since its inception
+                    EDM has expanded to include a wide range of subgenres. -
+                    <i>Wikipedia</i></p>
+            </div>
+
+            <!-- The main content of the site. Explanations, descriptions, examples, etc -->
+            <div id="context">
+                <h2>What even <i>is</i> EDM?</h2>
+                <p>To put at its simplest, EDM is any type of music that
+                    utilises or focuses its sound around being made with
+                    electronics. This can range from certain instruments being
+                    electronic, or the entire track being made in a DAW (Digital
+                    Audio Workspace). Tracks made with electronics can attempt
+                    to mimic the sound of real instruments or just make up
+                    sounds that real instruments could never make.</p>
+
+                <h2>Where did it come from?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div id="content">
+                <p>In a genre with as much variety as
+                    this one, people are bound to get different classifications
+                    mixed up. Learn the difference!</p>
+
+                <div class="table">
+                    <p>Oldies</p>
+                    <a href="#">Chiptune</a>
+                    <a href="#">House</a>
+                    <a href="#">Breakcore</a>
+                    <a href="#">Trance</a>
+
+                    <p>Classic</p>
+                    <a href="#">Trap</a>
+                    <a href="#">Disco</a>
+                    <a href="#">Drum and Bass (DnB)</a>
+                    <a href="#">Jumpstyle</a>
+
+                    <p>Newbies</p>
+                    <a href="#">Dubstep</a>
+                    <a href="#">Color Bass</a>
+                    <a href="#">Hyperpop</a>
+                    <a href="#">Phonk</a>
+
+                    <a href="#" id="all" style="grid-column-start: 1; grid-column-end: 4; grid-row: 6;">View All</a>
+                </div>
             </div>
         </main>
 
         <!-- Site Footer -->
         <footer>
             <p>Various nav links</p>
-            <p>Copyright, maybe</p>
+            <p>&copy; 2026 Electro Guide. All rights reserved.</p>
         </footer>
     </body>
 </html>
