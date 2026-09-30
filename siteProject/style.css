@@ -60,6 +60,12 @@ h2 {
     margin-bottom: 4px;
 }
 
+h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 0px;
+}
+
 p {
     color: white;
     font-size: 18px;
