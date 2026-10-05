@@ -162,7 +162,7 @@ summary p {
 }
 
 #headericon {
-    content: url(./media/icon.jpg);
+    content: url(./images/icon.jpg);
 }
 
 /*  ====================
@@ -291,7 +291,7 @@ footer {
     }
 
     #headericon {
-        content: url(./media/logo.jpg);
+        content: url(./images/logo.jpg);
     }
 
     #intro, #context, #content {
