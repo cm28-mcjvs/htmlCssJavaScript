@@ -11,7 +11,7 @@
         <header>
             <!-- Site logo/icon. Redirects to the homepage -->
             <a href="index.html" style="height: 50px;">
-                <img id="headericon" src="./media/icon.jpg"
+                <img id="headericon" src="./images/icon.jpg"
                     alt="Electro Guide Icon" height="50px">
             </a>
 
@@ -47,16 +47,16 @@
             </div>
 
             <!-- The first of the site content. Likely a quote or short tagline -->
-            <div id="intro">
+            <section id="intro">
                 <p><strong>Electronic Dance Music</strong> (EDM) is a broad
                     range of percussive electronic music genres originally made
                     for nightclubs, raves, and festivals. Since its inception
                     EDM has expanded to include a wide range of subgenres. -
                     <i>Wikipedia</i></p>
-            </div>
+            </section>
 
             <!-- The main content of the site. Explanations, descriptions, examples, etc -->
-            <div id="context">
+            <section id="context">
                 <h2>What even <i>is</i> EDM?</h2>
                 <p>To put at its simplest, EDM is any type of music that
                     utilises or focuses its sound around being made with
@@ -89,9 +89,9 @@
                     internet, electronic music has never been bigger.</p>
 
                 <p>To view more about the past of EDM, visit the <a href="history.html">History</a> page.</p>
-            </div>
+            </section>
 
-            <div id="content">
+            <section id="content">
                 <p style="margin-top: 16px;">In a genre with as much variety as
                     this one, people are bound to get different classifications
                     mixed up. Learn the difference!</p>
@@ -119,7 +119,16 @@
                         style="grid-column-start: 1; grid-column-end: 4; grid-row: 6;">View
                         All</a>
                 </div>
-            </div>
+            </section>
+
+            <!-- Only here because it has to be. -->
+            <section id="promo">
+                <h2>Watch the Promo</h2>
+                <video width="50%" height="auto" controls>
+                    <source src="media/promoVid.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </section>
         </main>
 
         <!-- Site Footer -->

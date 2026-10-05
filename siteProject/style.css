@@ -56,6 +56,7 @@ h1 {
 
 h2 {
     font-size: 36px;
+    color: white;
     margin-top: 16px;
     margin-bottom: 4px;
 }
@@ -178,7 +179,7 @@ main p {
 
 #title {
     border: 1px solid grey; /* Temporary */
-    background-image: url(./media/a-foggy-dance-club.jpg);
+    background-image: url(./images/a-foggy-dance-club.jpg);
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
     background-position: center 220%;
@@ -204,7 +205,6 @@ main p {
 
 #context {
     text-align: center;
-    color: white;
     border: 1px solid grey; /* Temporary */
     padding-left: clamp(10px, 10vw, 250px);
     padding-right: clamp(10px, 10vw, 250px);
@@ -257,6 +257,14 @@ main p {
     padding: 10px;
 }
 
+#promo {
+    text-align: center;
+}
+
+video {
+    padding: 12px;
+}
+
 /*  ==================
     Footer Box Styling
     ==================  */
@@ -289,5 +297,9 @@ footer {
     #intro, #context, #content {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    video {
+        width: 90%;
     }
 }
