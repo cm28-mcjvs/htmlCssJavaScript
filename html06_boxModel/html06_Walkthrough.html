@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model Practice</title>
+        <style>
+            /* width now INCLUDES padding and border. 300px means 300px. */
+            * {
+                box-sizing: border-box;
+                /* outline: 1px solid red; */
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;                  /* remove the browser's default space around the page */
+                background-color: #eeeeee;
+            }
+
+            /* Add each new rule below this line */
+
+            header {
+                position: sticky;
+                top: 0;                       /* stick at the top edge of the window */
+                z-index: 10;                  /* stay above content scrolling under it */
+                background-color: #0d2a4a;    /* solid background, or content shows through */
+                color: white;
+                padding: 1rem;
+            }
+            header h1 {
+                margin: 0;
+            }
+
+            /* A card: space inside, a line around it, space outside */
+            .card {
+                display: inline-block;
+                vertical-align: top;
+                background-color: white;
+                padding: 3rem;              /* space INSIDE the border */
+                border: 4px dashed grey;    /* width, style, color */
+                border-radius: 8px;           /* rounded corners */
+                margin: 3rem;                 /* space OUTSIDE the border */
+                width: 20rem;
+            }
+
+            /* Links are inline, so top/bottom padding doesn't push anything.
+            inline-block makes them real buttons. */
+            nav a {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                margin-right: 0.5rem;
+                background-color: #1565c0;
+                color: white;
+                text-decoration: none;        /* remove the underline */
+                border-radius: 4px;
+            }
+
+            /* Headings come with a top margin. Remove it inside the card. */
+            .card h2 {
+                margin-top: 0;
+            }
+
+            /* Center the main area */
+            main {
+                max-width: 50rem;     /* never wider than 50rem; shrinks on a phone */
+                margin: 0 auto;       /* 0 top and bottom, auto left and right = centered */
+                padding: 1rem;
+            }
+
+            /* Hide anything with class="hidden". It leaves no gap. */
+            .hidden {
+                display: none;
+            }
+
+            /* Only while the mouse is on a nav link */
+            nav a:hover {
+                background-color: #0d47a1;    /* darker blue */
+            }
+
+            /* Only while the mouse is on a card */
+            .card:hover {
+                border-color: #ff9800;
+            }
+
+            .has-badge {
+                position: relative;           /* the anchor for the badge */
+            }
+            .badge {
+                position: absolute;           /* placed from the parent's corner */
+                top: 0.5rem;
+                right: 0.5rem;
+                background-color: #ff9800;
+                color: white;
+                padding: 0.25rem 0.5rem;
+                border-radius: 4px;
+            }
+
+            .to-top {
+                position: fixed;              /* stays in the window corner while scrolling */
+                bottom: 1rem;
+                right: 1rem;
+                background-color: #1565c0;
+                color: white;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Box Model Practice</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="card">
+                <h2>Card One</h2>
+                <p>A card is a box with a heading and some text.</p>
+            </div>
+            <div class="card">
+                <h2>Card Two</h2>
+                <p>We will use cards to learn padding, border, and margin.</p>
+            </div>
+            <div class="card has-badge">
+                <span class="badge">NEW</span>
+                <h2>Card Three</h2>
+            <p>This card has a badge.</p>
+        </div>
+        </main>
+
+        <a href="#" class="to-top">Back to top</a>
+    </body>
+</html>
